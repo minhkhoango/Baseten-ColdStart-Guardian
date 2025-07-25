@@ -7,17 +7,15 @@ Predict and prevent cold starts for Baseten models by monitoring request rates a
 ### Run with Pre-built Docker Image (Recommended)
 1. **Pull the image:**
    ```bash
-   docker pull <your-dockerhub-username>/baseten-warmer:latest
+   docker pull ghcr.io/minhkhoango/baseten-warmer:latest
    ```
 2. **Run interactively (prompts for API key/model ID if not set):**
    ```bash
-   docker run -it <your-dockerhub-username>/baseten-warmer:latest
+   docker run -it ghcr.io/minhkhoango/baseten-warmer:latest
    ```
    Or, pass credentials:
    ```bash
-   docker run -e BASETEN_API_KEY=your_api_key -e TARGET_MODEL_ID=your_model_id <your-dockerhub-username>/baseten-warmer:latest
-   # or
-   docker run --env-file .env <your-dockerhub-username>/baseten-warmer:latest
+   docker run --env-file .env ghcr.io/minhkhoango/baseten-warmer:latest
    ```
 
 ### Build and Run Docker Image Manually (Alternative)
@@ -34,7 +32,6 @@ Predict and prevent cold starts for Baseten models by monitoring request rates a
    ```bash
    docker run -it baseten-warmer
    # or with credentials
-   docker run -e BASETEN_API_KEY=your_api_key -e TARGET_MODEL_ID=your_model_id baseten-warmer
    docker run --env-file .env baseten-warmer
    ```
 
