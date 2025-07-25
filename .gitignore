@@ -100,7 +100,6 @@ poetry.lock
 
 # dotenv environment variables
 .env
-.env.*
 
 # VS Code
 .vscode/
